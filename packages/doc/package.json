@@ -1,0 +1,31 @@
+{
+  "author": "Qihan Wu <qxw092@student.bham.ac.uk>",
+  "contributors": [
+    "Qihan Wu <qxw092@student.bham.ac.uk>",
+    "Isabel Hughes <ikh192@student.bham.ac.uk>",
+    "Haozhe Zhang <hxz174@student.bham.ac.uk>",
+    "Oghenevworuno Ejeneha <ooe117@student.bham.ac.uk>",
+    "Seyed Ziaei <saz182@student.bham.ac.uk>",
+    "Sohaib Benamor <sxb1669@student.bham.ac.uk>",
+    "Yupeng Du <yxd067@student.bham.ac.uk>"
+  ],
+  "dependencies": {
+    "vitepress": "1.0.0-alpha.60",
+    "vue": "^3.2.47"
+  },
+  "description": "",
+  "keywords": [
+    "NodeNas",
+    "NAS"
+  ],
+  "license": "CC-BY-4.0",
+  "main": "index.js",
+  "name": "@node-nas/doc",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "update": "pnpm update --latest"
+  },
+  "version": "1.0.0"
+}

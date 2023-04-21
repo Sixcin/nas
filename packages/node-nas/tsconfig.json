@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "esNext",
+    "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "target": "esNext"
+  }
+}
+//{
+//  "compilerOptions": {
+//    "allowSyntheticDefaultImports": true,
+//    "baseUrl": "./",
+//    "declaration": true,
+//    "emitDecoratorMetadata": true,
+//    "experimentalDecorators": true,
+//    "forceConsistentCasingInFileNames": false,
+//    "incremental": true,
+//    "module": "esnext",
+//    "moduleResolution": "Node",
+//    "noFallthroughCasesInSwitch": false,
+//    "noImplicitAny": false,
+//    "outDir": "./dist",
+//    "removeComments": true,
+//    "skipLibCheck": true,
+//    "sourceMap": true,
+//    "strictBindCallApply": false,
+//    "strictNullChecks": false,
+//    "target": "es2017"
+//  }
+//}

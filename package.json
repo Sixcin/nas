@@ -1,0 +1,63 @@
+{
+  "author": "Qihan Wu <qxw092@student.bham.ac.uk>",
+  "contributors": [
+    "Qihan Wu <qxw092@student.bham.ac.uk>",
+    "Isabel Hughes <ikh192@student.bham.ac.uk>",
+    "Haozhe Zhang <hxz174@student.bham.ac.uk>",
+    "Oghenevworuno Ejeneha <ooe117@student.bham.ac.uk>",
+    "Seyed Ziaei <saz182@student.bham.ac.uk>",
+    "Sohaib Benamor <sxb1669@student.bham.ac.uk>",
+    "Yupeng Du <yxd067@student.bham.ac.uk>"
+  ],
+  "description": "",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.6",
+    "prettier-plugin-tailwindcss": "^0.2.5"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "main": "index.js",
+  "name": "@node-nas/root",
+  "scripts": {
+    "build": "pnpm web:build && pnpm doc:build && pnpm server:build",
+    "clean": "pnpm server:clean && pnpm web:clean",
+    "dev": "pnpm web:dev & pnpm server:start:dev",
+    "doc:build": "pnpm --filter @node-nas/doc docs:build",
+    "doc:dev": "pnpm --filter @node-nas/doc docs:dev",
+    "doc:preview": "pnpm --filter @node-nas/doc docs:preview",
+    "prepare": "husky install",
+    "preview": "pnpm server:start:prod",
+    "server:build": "pnpm --filter node-nas build",
+    "server:build:all": "pnpm --filter node-nas build:all",
+    "server:build:copy": "pnpm --filter node-nas build:copy",
+    "server:build:format": "pnpm --filter node-nas build:format",
+    "server:build:lint": "pnpm --filter node-nas build:lint",
+    "server:clean": "pnpm --filter node-nas clean",
+    "server:start": "pnpm --filter node-nas start",
+    "server:start:dev": "pnpm --filter node-nas start:dev",
+    "server:start:prod": "pnpm --filter node-nas start:prod",
+    "server:test": "pnpm --filter node-nas test",
+    "server:test:cov": "pnpm --filter node-nas test:cov",
+    "server:test:debug": "pnpm --filter node-nas test:debug",
+    "server:test:e2e": "pnpm --filter node-nas test:e2e",
+    "server:test:watch": "pnpm --filter node-nas test:watch",
+    "update": "pnpm update --latest",
+    "web:build": "pnpm --filter @node-nas/web build",
+    "web:clean": "pnpm --filter @node-nas/web clean",
+    "web:dev": "pnpm --filter @node-nas/web dev",
+    "web:preview": "pnpm --filter @node-nas/web preview"
+  },
+  "type": "module",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/web",
+    "packages/node-nas",
+    "packages/docs"
+  ]
+}
